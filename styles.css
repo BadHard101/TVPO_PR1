@@ -1,0 +1,140 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+body {
+    margin: 0;
+    background-color: #c7efa9;
+}
+.wrapper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.wrapper div {
+    border-radius: 20px;
+}
+.map {
+    width: 100%;
+    height: 97vh;
+}
+#map_main {
+    display: flex;
+}
+#map_park_sveta {
+    display: none;
+}
+#map_lianozovsky_park {
+    display: none;
+}
+#map_altufevo_estate {
+    display: none;
+}
+#map_ba_park {
+    display: none;
+}
+#map_sviblovo {
+    display: none;
+}
+
+/* #6da34d #7fc97f #92c93d #a8c545 #4f9d58 */
+.box {
+    box-sizing: border-box;
+    margin: 0 1em;
+    background-color: #458f4d;
+    width: 60%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+
+    font-family: 'MS Reference Sans Serif', serif;
+}
+.field {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2%;
+}
+#field_park_sveta,
+#field_altufevo_estate,
+#field_ba_park,
+#field_lianozovsky_park,
+#field_sviblovo {
+    display: none;
+}
+
+
+.back_button {
+    position: sticky;
+    height: 4em;
+    width: 4em;
+    background-color: yellow;
+    bottom: 0;
+    left: 0.5em;
+    opacity: 70%;
+}
+.back_button:hover {
+    opacity: 100%;
+}
+
+.page_title {
+    width: 100%;
+    margin-bottom: 0.5em;
+    text-align: center;
+    padding: 2%;
+
+    font-size: 2em;
+    color:white;
+    background-color: #376b1a;
+
+}
+
+.main_inf {
+    width: 100%;
+    height: 100%;
+    background-color: #80ab67;
+    text-align: justify-all;
+    padding: 2%;
+    color: white;
+
+    overflow: auto; /* включаем скроллинг для div */
+}
+
+.main_inf img {
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+}
+
+.short_inf {
+    width: 100%;
+    background-color: #a1bd42;
+    text-align: justify-all;
+    padding: 2%;
+    color: white;
+
+    margin-bottom: 1em;
+}
+
+@media (max-width:1300px)  {
+    .wrapper {
+        flex-direction: column;
+    }
+    .map {
+        height: 60vh;
+    }
+    .box {
+        margin-top: 1em;
+        width: 95%;
+    }
+}
+
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+
